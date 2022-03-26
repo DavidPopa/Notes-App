@@ -32,7 +32,7 @@
           <button type="button" class="lightmode">LightMode</button>
         </div>
         <div class="data-todo">
-          <button type="button" class="add-todo size">
+          <button type="button" class="open-modal size">
             <ion-icon name="add-outline"></ion-icon>
           </button>
           <div class="count">
@@ -58,7 +58,28 @@
             </ul>
           </div>
           <div class="main_content">
-            <div class="todo"></div>
+            <div class="todo">
+              <div class="add-task">
+                <button type="button" class="open-modal">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="append-todo"></div>
+          </div>
+          <div class="modal-container active" id="modal-container">
+            <div class="modal">
+              <form action="#">
+                <input
+                  type="text"
+                  id="todo"
+                  name="todo"
+                  placeholder="e.g., Learn Franch"
+                />
+              </form>
+              <button type="submit" class="save">Save</button>
+              <button type="button" class="close">Close me</button>
+            </div>
           </div>
         </div>
       </section>
