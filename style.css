@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  line-height: 1;
+  font-weight: 500;
+  color: black;
+  background-color: #1d1c1c;
+}
+/**************************** Header ****************************/
+.header {
+  width: 100%;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.data-todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle {
+  padding: 0 5rem;
+}
+.darkmode,
+.lightmode,
+.add-todo {
+  padding: 1.2rem 2.5rem;
+  text-decoration: none;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #282828;
+  color: aliceblue;
+  transition: 0.3s all;
+}
+.darkmode:hover,
+.lightmode:hover,
+.add-todo:hover {
+  background-color: red;
+}
+.size {
+  font-size: 2rem;
+}
+.count {
+  font-size: 2rem;
+  color: aliceblue;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+#counter {
+  font-size: 1rem;
+}
+
+/**************************** Body ****************************/
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #282828;
+  position: fixed;
+}
+
+.main_content {
+  margin-left: 200px;
+  color: aliceblue;
+}
+
+/**************************** Sidebar ****************************/
+.about {
+  color: aliceblue;
+}
+.socila-media a {
+  text-decoration: none;
+  text-transform: none;
+  color: aliceblue;
+}
